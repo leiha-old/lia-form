@@ -1,6 +1,6 @@
 <?php
 
-namespace Lia\Bundle\FormBundle;
+namespace Lia\FormBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Lia\Bundle\FormBundle\Library\Fields;
+namespace Lia\FormBundle\Library\Fields;
 
 use Lia\Library\Annotation\ReflexionProperty;
 

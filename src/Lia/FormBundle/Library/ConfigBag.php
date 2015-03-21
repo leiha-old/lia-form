@@ -1,6 +1,6 @@
 <?php
 
-namespace Lia\Bundle\FormBundle\Library\Fields;
+namespace Lia\FormBundle\Library;
 
 use Lia\Library\Bag\Bag;
 use Lia\Library\Bag\CssBag;
@@ -16,8 +16,9 @@ class ConfigBag
     public function __construct(){
         parent::__construct(array(
                 'name',
-                'type',
-                'length',
+                'action',
+                'method',
+                'protocol',
                 'css' => array(
                     'classBag' => 'Lia\Library\Bag\CssBag'
                 )
@@ -36,23 +37,33 @@ class ConfigBag
         return $this->get('name');
     }
 
+    public function getAction($default=''){
+        return $this->get('action', $default);
+    }
+
+    public function getMethod($default=''){
+        return $this->get('method', $default);
+    }
+
+    public function getProtocol($default=''){
+        return $this->get('protocol', $default);
+    }
+
     public function setName($name){
         return $this->set('name', $name);
     }
 
-    public function getType(){
-        return $this->get('type');
+    public function setAction($action){
+        return $this->set('action', $action);
     }
 
-    public function setType($name){
-        return $this->set('type', $name);
+    public function setMethod($method){
+        return $this->set('method', $method);
     }
 
-    public function getLength(){
-        return $this->get('length');
+    public function setProtocol($protocol){
+        return $this->set('protocol', $protocol);
     }
 
-    public function setLength($name){
-        return $this->set('length', $name);
-    }
+
 }

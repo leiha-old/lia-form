@@ -1,9 +1,9 @@
 <?php
 
-namespace Lia\Bundle\FormBundle\Library;
+namespace Lia\FormBundle\Library;
 
-use Lia\Bundle\FormBundle\Library\Fields\Field;
-use Lia\Bundle\FormBundle\Library\Fields\FieldInterface;
+use Lia\FormBundle\Library\Fields\Field;
+use Lia\FormBundle\Library\Fields\FieldInterface;
 use Lia\Library\Annotation\ReflectionObject;
 use Lia\Library\Annotation\ReflexionProperty;
 use Lia\Library\Bag\CssBag;
@@ -122,7 +122,7 @@ class Form {
     protected function checkPropertyForFieldAnnotationsConfig($name, ReflexionProperty $property){
 
         // if Property haven't a Field annotation do nothing !
-        if(!$config = $property->getAnnotation('Lia\Bundle\FormBundle\Library\Mapping\Field')){
+        if(!$config = $property->getAnnotation('Lia\FormBundle\Library\Mapping\Field')){
             return;
         }
 
@@ -164,7 +164,7 @@ class Form {
             $fieldObject = new $config['className']();
             if(!$fieldObject instanceof Field){
                 throw new Exception('Class [%1s] must extends'
-                    .' [Lia\Bundle\FormBundle\Library\Fields\Field] in [%2s]',
+                    .' [Lia\FormBundle\Library\Fields\Field] in [%2s]',
                     array($config['className'], $property->getClassName())
                 );
             }

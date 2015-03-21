@@ -1,5 +1,5 @@
 parameters:
-#    lia_form.example.class: Lia\Bundle\FormBundle\Example
+#    lia_form.example.class: Lia\FormBundle\Example
 
 services:
 #    lia_form.example:

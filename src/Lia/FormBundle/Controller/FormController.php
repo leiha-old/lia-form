@@ -1,6 +1,6 @@
 <?php
 
-namespace Lia\Bundle\FormBundle\Controller;
+namespace Lia\FormBundle\Controller;
 
 use Lia\Library\Asset\AssetInterface;
 use Lia\Library\Controller\Controller;

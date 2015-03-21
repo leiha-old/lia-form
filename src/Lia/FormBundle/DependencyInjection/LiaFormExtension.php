@@ -1,6 +1,6 @@
 <?php
 
-namespace Lia\Bundle\FormBundle\DependencyInjection;
+namespace Lia\FormBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

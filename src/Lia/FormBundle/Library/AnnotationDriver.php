@@ -1,13 +1,13 @@
 <?php
 
-namespace Lia\Bundle\FormBundle\Library;
+namespace Lia\FormBundle\Library;
 
 use Lia\Library\Annotation\Driver;
 
 class AnnotationDriver extends Driver
 {
     protected $annotationsClass = array(
-        'Lia\Bundle\FormBundle\Library\Mapping\Field',
+        'Lia\FormBundle\Library\Mapping\Field',
         'Doctrine\ORM\Mapping\Column'
     );
 

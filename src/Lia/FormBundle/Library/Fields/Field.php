@@ -1,6 +1,6 @@
 <?php
 
-namespace Lia\Bundle\FormBundle\Library\Fields;
+namespace Lia\FormBundle\Library\Fields;
 
 //use Lia\Library\Annotation\ReflexionProperty;
 use Lia\Library\Bag\CssBag;
@@ -21,9 +21,9 @@ abstract class Field
 
 
     protected static $availableFields = array(
-        'string'  => 'Lia\Bundle\FormBundle\Library\Fields\String',
-        'text'    => 'Lia\Bundle\FormBundle\Library\Fields\String',
-        'integer' => 'Lia\Bundle\FormBundle\Library\Fields\Integer',
+        'string'  => 'Lia\FormBundle\Library\Fields\String',
+        'text'    => 'Lia\FormBundle\Library\Fields\String',
+        'integer' => 'Lia\FormBundle\Library\Fields\Integer',
     );
 
     /**
