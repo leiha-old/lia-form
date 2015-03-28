@@ -1,8 +1,8 @@
 <?php
 
-namespace Lia\FormBundle\Library\Fields;
+namespace Lia\FormBundle\Fields;
 
-use Lia\Library\Annotation\ReflexionProperty;
+use Lia\KernelBundle\Annotation\ReflexionProperty;
 
 interface FieldInterface
 {

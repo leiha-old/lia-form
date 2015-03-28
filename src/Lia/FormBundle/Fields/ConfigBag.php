@@ -1,6 +1,6 @@
 <?php
 
-namespace Lia\FormBundle\Library\Fields;
+namespace Lia\FormBundle\Fields;
 
 use Lia\Library\Bag\Bag;
 use Lia\Library\Bag\CssBag;

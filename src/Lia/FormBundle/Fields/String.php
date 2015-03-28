@@ -1,13 +1,12 @@
 <?php
 
-namespace Lia\FormBundle\Library\Fields;
+namespace Lia\FormBundle\Fields;
 
-use Lia\Library\Annotation\ReflexionProperty;
+use Lia\KernelBundle\Annotation\ReflexionProperty;
 
-class Integer
+class String
     extends Field
 {
-
     public function extractAnnotationConfig(ReflexionProperty $property){
 
 

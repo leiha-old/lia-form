@@ -1,6 +1,6 @@
 <?php
 
-namespace Lia\FormBundle\Library\Mapping;
+namespace Lia\FormBundle\Mapping;
 
 /**
  * @Annotation
